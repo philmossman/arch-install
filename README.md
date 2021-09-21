@@ -1,5 +1,7 @@
 # Arch Basic Install Commands-Script
 
+This is a fork of Ermanno Ferrari's script with various items tweaked (Locale etc.) to better suit my needs. Ermanno's original script can be found here - https://gitlab.com/eflinux/arch-basic
+
 In this repository you will find packages-scripts for the base install of Arch Linux and the Gnome, KDE, Cinnamon and Xfce desktop environments. More to come for Windows Managers soon.
 Modify the packages to your liking, make the script executable with chmod +x scriptname and then run with ./scriptname.
 A script for the base install on MBR/Legacy will be available soon.
