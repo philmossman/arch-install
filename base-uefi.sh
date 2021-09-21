@@ -4,7 +4,7 @@ ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime
 hwclock --systohc
 sed -i '177s/.//' /etc/locale.gen
 locale-gen
-echo "LANG=en_US.UTF-8" >> /etc/locale.conf
+echo "LANG=en_GB.UTF-8" >> /etc/locale.conf
 echo "KEYMAP=de_CH-latin1" >> /etc/vconsole.conf
 echo "arch" >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
@@ -35,11 +35,11 @@ systemctl enable libvirtd
 systemctl enable firewalld
 systemctl enable acpid
 
-useradd -m ermanno
-echo ermanno:password | chpasswd
-usermod -aG libvirt ermanno
+useradd -m phil
+echo phil:password | chpasswd
+usermod -aG libvirt phil
 
-echo "ermanno ALL=(ALL) ALL" >> /etc/sudoers.d/ermanno
+echo "phil ALL=(ALL) ALL" >> /etc/sudoers.d/phil
 
 
 printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"
